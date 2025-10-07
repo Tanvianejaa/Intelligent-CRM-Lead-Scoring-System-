@@ -1,3 +1,5 @@
+#command+shift+p then select python interpretor 3.9.0
+
 # ---------------------------
 # Step 1: Load Libraries
 # ---------------------------
