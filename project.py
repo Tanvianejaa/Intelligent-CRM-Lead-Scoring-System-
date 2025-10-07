@@ -98,7 +98,7 @@ print("PR-AUC:", pr_auc_rf)
 # ---------------------------
 # Step 4c: XGBoost
 # ---------------------------
-xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
+xgb_model = xgb_model = xgb.XGBClassifier(eval_metric='logloss', random_state=42)
 xgb_model.fit(X_train, y_train)
 
 y_pred_proba_xgb = xgb_model.predict_proba(X_test)[:, 1]
@@ -138,3 +138,4 @@ joblib.dump(rf, 'rf_model.pkl')
 joblib.dump(xgb_model, 'xgb_model.pkl')
 
 print("\nModels saved: lr_model.pkl, rf_model.pkl, xgb_model.pkl")
+
