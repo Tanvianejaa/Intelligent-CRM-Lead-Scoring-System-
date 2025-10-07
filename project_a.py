@@ -88,7 +88,7 @@ rf.fit(X_train, y_train)
 joblib.dump(rf, 'rf_model.pkl')
 
 # XGBoost
-xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss', random_state=42)
+xgb_model = xgb_model = xgb.XGBClassifier(eval_metric='logloss', random_state=42)
 xgb_model.fit(X_train, y_train)
 joblib.dump(xgb_model, 'xgb_model.pkl')
 
