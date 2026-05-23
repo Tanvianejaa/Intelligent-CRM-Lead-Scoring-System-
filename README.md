@@ -8,19 +8,6 @@ It includes:
 
 ---
 
-## 📁 Project Structure
-
-├── project.py                # Model training script
-├── project_a.py             # Streamlit web app
-├── Leadss_scoring.csv       # Dataset
-├── lr_model.pkl             # Logistic Regression model
-├── rf_model.pkl             # Random Forest model
-├── xgb_model.pkl            # XGBoost model
-├── scaler.pkl               # Scaler for numeric features
-├── *_encoder.pkl            # Label encoders for categorical features
-└── README.md                # Project documentation
-
----
 
 ## ⚙️ Features
 
